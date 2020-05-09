@@ -5,21 +5,34 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --config build/webpack.dev.js",
-    "build": "webpack --config build/webpack.prod.js"
+    "build": "webpack --config build/webpack.prod.js",
+    "lint": "eslint --ext .js,.vue src",
+    "dev-dashboard": "webpack-dashboard -- webpack-dev-server --config build/webpack.dev.js"
   },
   "author": "",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@soda/friendly-errors-webpack-plugin": "^1.7.1",
+    "@vue/preload-webpack-plugin": "^1.1.1",
     "babel-loader": "^8.1.0",
+    "cache-loader": "^4.1.0",
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.3",
+    "dotenv-webpack": "^1.7.0",
+    "eslint": "^7.0.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-vue": "^6.2.2",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
+    "svg-sprite-loader": "^4.3.0",
+    "svgo": "^1.3.2",
+    "svgo-loader": "^2.2.1",
     "url-loader": "^4.1.0",
     "vue-loader": "^15.9.2",
     "vue-template-compiler": "^2.6.11",
@@ -31,6 +44,20 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "regenerator-runtime": "^0.13.5"
+    "axios": "^0.18.1",
+    "element-ui": "^2.11.1",
+    "js-cookie": "^2.2.0",
+    "js-md5": "^0.7.3",
+    "nprogress": "^0.2.0",
+    "qs": "^6.7.0",
+    "vue": "^2.6.10",
+    "vue-cropperjs": "^3.0.0",
+    "vue-i18n": "^8.11.2",
+    "vue-multiselect": "^2.1.6",
+    "vue-router": "^3.1.2",
+    "vue2-timepicker": "^1.0.1",
+    "vuebar": "^0.0.20",
+    "vuedraggable": "^2.23.0",
+    "vuex": "^3.1.1"
   }
 }

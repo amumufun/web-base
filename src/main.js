@@ -1,10 +1,10 @@
 import './index.scss';
-import set from './sum';
+import set from './set';
 
-new Promise((resolve, reject) => {
+new Promise((resolve) => {
   resolve(123);
-})
+});
 
 for (const item of set) {
-  console.log(item);
+  document.write(item);
 }
